@@ -57,10 +57,8 @@ export const generateMockActivities = (): CommunityActivity[] => {
       titles: ['Looking for Group', 'Need teammates', 'LFG for raid'],
       descriptions: ['Experienced players only', 'Casual group welcome', 'Let\'s team up and play']
     }
-  ];
-
-  // Generate activities for random cities
-  const selectedCities = MAJOR_CITIES.slice(0, 15); // Use first 15 cities
+  ];  // Generate activities for random cities
+  const selectedCities = MAJOR_CITIES.slice(0, 14); // Use first 14 cities for activities (including Istanbul and Rome)
   
   selectedCities.forEach((city, index) => {
     const numActivities = Math.floor(Math.random() * 3) + 1; // 1-3 activities per city
